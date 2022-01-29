@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <!-- 툴바 중복 제거 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="1dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/goBack"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:elevation="1dp"
+            android:background="@drawable/ic_go_back"
+            android:backgroundTint="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/complaint_add"
+            style="@style/complaintTitle"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/complaintPerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/complaint_user_info"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/addComplaintInfo"/>
+
+            <EditText
+                android:id="@+id/complaintName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/complaint_name"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:nextFocusDown="@id/complaintBusNum"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/complaintPhone"
+                app:layout_constraintTop_toBottomOf="@id/complaintPerInfo"
+                style="@style/addComplaintContent"/>
+
+            <EditText
+                android:id="@+id/complaintPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLength="11"
+                android:enabled="false"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/complaintName"
+                app:layout_constraintTop_toBottomOf="@id/complaintPerInfo"
+                style="@style/addComplaintContent"/>
+
+            <TextView
+                android:id="@+id/complaintInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/complaint_content_info"
+                app:layout_constraintTop_toBottomOf="@id/complaintPhone"
+                style="@style/addComplaintInfo"/>
+
+            <EditText
+                android:id="@+id/complaintBusNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/complaint_bus_num"
+                android:singleLine="true"
+                android:maxLength="15"
+                android:nextFocusDown="@id/complaintDate"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/complaintDate"
+                app:layout_constraintTop_toBottomOf="@id/complaintInfo"
+                style="@style/addComplaintContent"/>
+
+            <EditText
+                android:id="@+id/complaintDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/complaint_date"
+                android:ems="6"
+                app:layout_constraintLeft_toRightOf="@id/complaintBusNum"
+                app:layout_constraintRight_toLeftOf="@id/complaintTime"
+                app:layout_constraintTop_toBottomOf="@id/complaintInfo"
+                style="@style/addComplaintContent"/>
+
+            <EditText
+                android:id="@+id/complaintTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/complaint_time"
+                android:ems="5"
+                app:layout_constraintLeft_toRightOf="@id/complaintDate"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/complaintInfo"
+                style="@style/addComplaintContent"/>
+
+            <EditText
+                android:id="@+id/complaintContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:padding="15dp"
+                android:lines="8"
+                android:gravity="top"
+                android:maxLength="70"
+                android:hint="@string/complaint_content"
+                android:textSize="15sp"
+                android:textColor="@color/colorNormalDark"
+                android:textColorHint="@color/colorNormal"
+                android:background="@drawable/search_border"
+                app:layout_constraintTop_toBottomOf="@id/complaintBusNum"/>
+
+            <TextView
+                android:id="@+id/complaintNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/complaint_notice"
+                app:layout_constraintTop_toBottomOf="@id/complaintContent"
+                style="@style/addComplaintInfo"/>
+
+            <TextView
+                android:id="@+id/complaintNoteContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:padding="15dp"
+                android:text="@string/complaint_notice_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorNormalDark"
+                android:background="@drawable/search_border"
+                app:layout_constraintTop_toBottomOf="@id/complaintNote"/>
+
+            <Button
+                android:id="@+id/complaintAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/complaint_commit"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/colorAccent"
+                app:layout_constraintTop_toBottomOf="@id/complaintNoteContent"
+                style="@style/addComplaintInfo"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

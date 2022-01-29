@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 투명 & 못가져옴 -->
+    <color name="invisible">#00000000</color>
+    <color name="import_error">#AAAAAA</color>
+
+    <!-- 기본색상들 -->
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#D8B4ED</color>
+    <color name="colorAccent">#D8B4ED</color>
+    <color name="colorNormal">#aa777777</color>
+    <color name="colorNormalLight">#11777777</color>
+    <color name="colorNormalDark">#cc777777</color>
+
+    <!-- 버스관련 -->
+    <color name="bus_green">#70BF70</color>
+    <color name="bus_red">#D16969</color>
+    <color name="bus_blue">#6C85C5</color>
+    <color name="bus_yellow">#F8E95F</color>
+    <color name="bus_skyblue">#83C3D6</color>
+
+    <!-- 혼잡도관련 -->
+    <color name="busy_empty">@color/bus_green</color>
+    <color name="busy_half">@color/bus_yellow</color>
+    <color name="busy_full">@color/bus_red</color>
+
+    <!--배경색 관련-->
+    <color name="button_gray">#f0f0f0</color>
+    <color name="background_gray">#d0d0d0</color>
+    <color name="background_gray_alph">#74D0D0D0</color>
+
+    <!-- 정류장 -->
+    <color name="station">#303B51</color>
+
+    <!-- 000 아이디로 로그인 -->
+    <color name="naver">#4CAF50</color>
+    <color name="kakao">#FD0</color>
+    <color name="google">#D00</color>
+
+    <!-- 메인 -->
+    <color name="text">#FFFFFF</color>
+    <color name="bg">#B9D8B4ED</color>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomNavBookmark"
+        android:icon="@drawable/ic_bookmark"
+        android:title="@string/bookmark"/>
+    <item
+        android:id="@+id/bottomNavMap"
+        android:icon="@drawable/ic_map"
+        android:title="@string/map" />
+    <item
+        android:id="@+id/bottomNavAlarmOff"
+        android:icon="@drawable/ic_get_off"
+        android:title="@string/alarm_off"/>
+</menu>

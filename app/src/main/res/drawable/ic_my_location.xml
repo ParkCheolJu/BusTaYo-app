@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+    <path
+        android:name="타원 1"
+        android:pathData="m256.3 63.9c106.3 0 192.4 86.2 192.4 192.6c0 106.4 -86.2 192.6 -192.4 192.6c-106.3 0 -192.4 -86.2 -192.4 -192.6c0 -106.4 86.2 -192.6 192.4 -192.6zm0 -13c-113.5 0 -205.4 92.1 -205.4 205.6c0 113.6 92 205.6 205.4 205.6c113.5 0 205.4 -92.1 205.4 -205.6c0 -113.6 -92 -205.6 -205.4 -205.6z"
+        android:fillColor="#fff" />
+    <path
+        android:fillColor="#fff"
+        android:strokeColor="#fff"
+        android:strokeWidth="13"
+        android:strokeMiterLimit="100"
+        android:name="타원 2"
+        android:pathData="m254.1 35c0 0 0 8.4 0 22.8l2.7 -0.5c0 -14.1 0 -22.3 0 -22.3zm-220.1 220v3.1h26l-0.3 -3.1zm420.3 0 0.5 3.1h22.3v-3.1zm-198 -93.6c-52.5 0 -95.1 42.6 -95.1 95.2c0 52.6 42.6 95.2 95.1 95.2c52.5 0 95.1 -42.6 95.1 -95.2c0 -52.6 -42.6 -95.2 -95.1 -95.2zm0.5 290.7 -2.7 0.3c0 16.2 0 25.7 0 25.7h2.7c0 0 0 -9.6 0 -26z" />
+</vector>
